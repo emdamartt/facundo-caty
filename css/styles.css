@@ -329,6 +329,7 @@ h3 {
     }
     .logo {
         width: 100px;
+        filter: brightness(150%);
     }
     .card-h {
         margin-bottom: 3%;
