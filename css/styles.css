@@ -1,15 +1,17 @@
-@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
 
 html {
     font-size: 62.5%;
     /*equivale a 1em*/
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins';
+body {
+    background-color: #000;
 }
 
 
@@ -323,16 +325,13 @@ h3 {
 @media (max-width:576px) {
     #sobreNosotros {
         font-size: 20px;
-
     }
-
     .logo {
         width: 100px;
     }
     .card-h {
         margin-bottom: 3%;
     }
-
     h3 {
         font-size: 16px;
     }
@@ -361,7 +360,6 @@ h3 {
     .site-footer .social-icons {
         text-align: center
     }
-
     .wrap {
         height: 150vh;
     }
