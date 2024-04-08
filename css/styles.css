@@ -27,6 +27,7 @@ body {
     width: 100px;
     object-fit: cover;
     margin-left: 3vw;
+    filter: brightness(150%);
 }
 
 
