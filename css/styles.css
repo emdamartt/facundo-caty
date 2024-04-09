@@ -303,6 +303,9 @@ h3 {
     font-size: 14px
 }
 
+.social-icons a.email:hover {
+    background-color: #ec1919
+}
 .social-icons a.facebook:hover {
     background-color: #3b5998
 }
@@ -322,10 +325,16 @@ h3 {
 
 
 /*MEDIA QUERIES*/
+@media (max-width:426px) {
+    .iccons {
+        display: flex;
+        justify-content: center;
+    } 
+}
 
 @media (max-width:576px) {
     #sobreNosotros {
-        font-size: 20px;
+        font-size: 2px;
     }
     .logo {
         width: 100px;
@@ -337,11 +346,24 @@ h3 {
     h3 {
         font-size: 16px;
     }
+    .iccons {
+        display: flex;
+    } 
+
 }
 
-/*MEdia Querie 768px*/
+/*MEDIA QUERIES 768px*/
 
 @media (max-width:768px) {
+    .social-icons {
+        display: inline;
+    } 
+    .social-icons li{
+        width: 40px;
+    }
+    .copyright-text {
+        font-size: 14px;
+    }
     #sobreNosotros{
         padding-top: 5px;
     }
@@ -357,7 +379,6 @@ h3 {
     .site-footer {
         padding-bottom: 0;
     }
-
     .site-footer .copyright-text,
     .site-footer .social-icons {
         text-align: center
@@ -365,14 +386,12 @@ h3 {
     .wrap {
         height: 150vh;
     }
-
     .wrap3 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
     .texto-prem {
         order: 2;
     }
@@ -384,17 +403,14 @@ h3 {
         margin-right: 0;
         font-weight: 600
     }
-
     .wrap-texto {
         width: 100%;
         padding: 40px;
     }
-
     #sobreNosotros {
         padding-top: 50px;
         z-index: 100;
     }
-
     .line-title {
         position: absolute;
         left: 15%;
@@ -405,7 +421,6 @@ h3 {
         /* O el grosor deseado */
         background-color: #C09465;
     }
-
     .second-img {
         width: fit-content;
     }
@@ -456,6 +471,7 @@ h3 {
         font-size: 15px;
         padding: 2px;
     }
+    
 
     @media (max-width:991px) {
         .site-footer [class^=col-] {
